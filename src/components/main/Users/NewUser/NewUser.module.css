@@ -1,0 +1,295 @@
+.span {
+    font-size: 25px;
+    /*display: none;*/
+}
+
+.main {
+    width: 64%;
+    height: 153px;
+    background: rgba(232, 231, 231, 1);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    top: 5px;
+    left: 9px;
+    margin-top: 9px;
+    margin-left: 5px;
+    display: block;
+}
+
+.button, .removeButton {
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    /*position: absolute;*/
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 5px;
+    width: 138px;
+    height: 35px;
+    outline: none;
+    white-space: nowrap;
+
+}
+
+.button {
+    background: rgba(31, 212, 202, 1);
+}
+
+.removeButton {
+    background: rgba(201, 47, 47, 1);
+    color: white;
+}
+
+.button:disabled, .button[disabled] {
+    animation-name: follow;
+    animation-duration: 0.2s;
+    background: rgba(31, 212, 202, 1);
+    border-radius: 20px;
+    width: 85px;
+    height: 26px;
+    border: none;
+    /*position: absolute;*/
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 9px;
+    outline: none;
+}
+
+.animate-button {
+    animation-name: follow;
+    animation-duration: 0.2s;
+}
+
+.name {
+    margin-top: 14px;
+    margin-left: 19px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.block2 {
+    width: 557px;
+    height: 100%;
+}
+
+.description {
+    font-size: 15px;
+    color: rgba(97, 97, 97, 1);
+    margin-top: 11px;
+    margin-left: 18px;
+}
+
+.span {
+    display: block;
+}
+
+.country {
+    font-size: 20px;
+    color: rgba(64, 64, 64, 1);
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.city {
+    margin-top: 17px;
+    font-size: 20px;
+    color: rgba(64, 64, 64, 1);
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes follow {
+    0% {
+        margin-left: 9px;
+    }
+    50% {
+        margin-left: 15px;
+    }
+    100% {
+        margin-left: 9px;
+    }
+}
+
+.block1 {
+    display: block;
+}
+
+.isDisabled {
+    background: rgb(203, 245, 242);
+}
+
+.span {
+    font-size: 25px;
+    /*display: none;*/
+}
+
+.main {
+    width: 77%;
+    height: 182px;
+    background: rgba(169, 169, 169, 1);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+}
+
+.userImage {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 120px;
+    height: 120px;
+    display: block;
+}
+
+.block1 {
+    width: 22%;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.animate-button {
+    animation-name: follow;
+    animation-duration: 0.2s;
+}
+
+.name {
+    margin-top: 36px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.block2 {
+    width: 557px;
+    height: 100%;
+}
+
+.description {
+    font-size: 15px;
+    color: rgba(97, 97, 97, 1);
+    margin-top: 11px;
+}
+
+.span {
+    display: block;
+}
+
+.country {
+    font-size: 20px;
+    color: rgba(64, 64, 64, 1);
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.city {
+    margin-top: 17px;
+    font-size: 20px;
+    color: rgba(64, 64, 64, 1);
+}
+
+.hidden {
+    display: none;
+}
+
+.block1 {
+    display: block;
+}
+
+.isDisabled {
+    background: rgb(203, 245, 242);
+}
+
+.removeFriend, .buttonDisabled {
+    width: 62%;
+    border: none;
+    outline: none;
+    height: 39px;
+    border-radius: 20px;
+    color: white;
+    font-size: 17px;
+    padding: 0;
+    margin-top: 18px;
+}
+
+.buttonDisabled {
+    background: rgba(223, 182, 173, 1);
+}
+
+.removeFriend {
+    background: rgba(217, 63, 30, 1);
+}
+
+.block3 {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1139px) {
+    .block1 {
+        width: 30%;
+    }
+
+    .block2 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 970px) {
+    .removeFriend, .buttonDisabled {
+        display: none;
+    }
+
+    .buttonDisabledResponsive, .removeFriendResponsive {
+        display: block;
+    }
+}
+
+@media (max-width: 593px) {
+    .main {
+        width: 100%;
+    }
+}
+
+@media (max-width: 457px) {
+    .name {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 328px) {
+    .userImage {
+        width: 100px;
+        height: 100px;
+    }
+
+    .name {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .removeFriendResponsive {
+        width: 41px;
+    }
+}

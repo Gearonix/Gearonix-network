@@ -1,0 +1,64 @@
+.main{
+    background: white;
+    border: 1px solid transparent;
+    height: 1300px;
+    box-sizing: border-box;
+}
+.title{
+    margin-top: 149px;
+    font-size: 70px;
+    color: #616161;
+    text-align: center;
+}
+.image{
+    background: url("../../../source/img/svg/ERROR404.png") no-repeat;
+    background-size: 100%;
+    width: 68%;
+    height: 402px;
+    margin: 0 auto;
+    margin-top: 70px;
+    animation-name: size,rotate;
+    animation-iteration-count: infinite,infinite;
+    animation-duration: 6s,12s;
+}
+
+@keyframes size{
+    0%{
+        opacity: 1;
+    }
+    23%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    26%{
+        opacity: 1;
+    }
+    28%{
+        opacity: 0;
+    }
+    29%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    47%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(20deg);
+    }
+    52%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}

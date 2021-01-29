@@ -1,0 +1,141 @@
+.span{
+    font-size: 25px;
+    /*display: none;*/
+}
+.main{
+    width: 77%;
+    height: 182px;
+    background: rgba(169, 169, 169, 1);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+}
+.userImage{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 120px;
+    height: 120px;
+    display: block;
+}
+
+.block1{
+    width: 22%;
+    position: relative;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.animate-button{
+    animation-name: follow;
+    animation-duration: 0.2s;
+}
+.name{
+    margin-top: 36px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+.block2{
+    width: 557px;
+    height: 100%;
+}
+.description{
+    font-size: 15px;
+    color: rgba(97, 97, 97, 1);
+    margin-top: 11px;
+}
+.span{
+    display: block;
+}
+.country{
+    font-size: 20px;
+    color: rgba(64, 64, 64, 1);
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+.city{
+    margin-top: 17px;
+    font-size: 20px;
+    color: rgba(64, 64, 64, 1);
+}
+.hidden{
+    display: none;
+}
+
+.block1{
+    display: block;
+}
+.isDisabled,.buttonDisabledResponsive{
+    background: rgb(203, 245, 242);
+}
+.removeFriend,.buttonDisabled,.buttonDisabledResponsive,.removeFriendResponsive{
+    width: 159px;
+    border: none;
+    outline: none;
+    height: 39px;
+    border-radius: 20px;
+    color: white;
+    font-size: 17px;
+    padding: 0;
+    margin-top: 18px;
+}
+.buttonDisabledResponsive,.removeFriendResponsive{
+    width: 61px;
+    border-radius: 10px;
+    display: none;
+}
+.buttonDisabled{
+    background: rgba(223, 182, 173, 1);
+}
+.removeFriend,.removeFriendResponsive{
+    background: rgba(217, 63, 30, 1);
+}
+.block3{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 1139px) {
+    .block1{
+        width: 30%;
+    }
+    .block2{
+        width: 50%;
+    }
+}
+@media (max-width: 970px) {
+    .removeFriend,.buttonDisabled{
+        display: none;
+    }
+    .buttonDisabledResponsive,.removeFriendResponsive{
+        display: block;
+    }
+}
+@media (max-width: 593px) {
+    .main{
+        width: 100%;
+    }
+}
+@media (max-width: 328px) {
+    .userImage{
+        width: 100px;
+        height: 100px;
+    }
+    .name{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .removeFriendResponsive{
+        width: 41px;
+    }
+}

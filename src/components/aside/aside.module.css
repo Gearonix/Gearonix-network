@@ -1,0 +1,194 @@
+@import './../../source/fonts/font.css';
+
+aside {
+    width: 16%;
+    /*background: #4B4B4B;*/
+    color: white;
+    font-size: 40px;
+    text-align: center;
+
+
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+.AsideA {
+    text-decoration: none;
+    color: #D7D7D7;
+    font-size: 30px;
+    display: flex;
+    margin-left: 20px;
+    transition-property: color;
+    transition-duration: 0.35s;
+}
+
+.title {
+    font-size: 30px;
+    color: #D7D7D7;
+    font-weight: normal;
+}
+
+.AsideA:hover {
+    color: rgba(150, 149, 149, 1);
+}
+
+/*a:hover{*/
+/*  color: rgb(237, 238, 242);*/
+
+/*}*/
+aside .asideBlock {
+    height: 400px;
+
+}
+
+.asideBlock {
+    height: 500px;
+    position: fixed;
+    margin-top: 100px;
+}
+
+.asideBlock ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 300px;
+}
+
+.asideBlock ul li + li {
+    margin-top: 25px;
+
+}
+
+.asideBlock li {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.asideBlock li:hover {
+    color: rgba(179, 179, 179, 1);
+}
+
+
+.otherAsideBlock a {
+    color: white;
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+.otherAsideBlock {
+    margin-bottom: 150px;
+
+}
+
+.active {
+    color: rgba(184, 184, 184, 1);
+}
+
+.active:hover {
+    color: rgba(184, 184, 184, 1);
+}
+
+.friends {
+
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.friends h1 {
+    font-size: 50px;
+    text-align: left;
+    margin-left: 20px;
+    font-weight: 400;
+}
+
+.lightGreen {
+    background: #ADEFD1FF;
+}
+
+.lightBlue {
+    background: #9CC3D5FF;
+}
+
+.lightYellow {
+    background: #D4B996FF;
+}
+
+.friendsIcon:before {
+    content: "\e9da";
+
+}
+
+.home:before {
+    content: "\e902";
+}
+
+.friends:before {
+    content: "\e9da";
+}
+
+.users:before {
+    content: "\e903";
+}
+
+.messages:before {
+    content: "\e904";
+}
+
+.news:before {
+    content: "\e91a";
+}
+
+.settings:before {
+    content: "\e994";
+}
+
+.icon {
+    font-family: 'icomoon' !important;
+    font-size: 40px;
+    margin-right: 20px;
+    display: inline;
+    color: rgba(184, 184, 184, 1);
+}
+
+@media (max-width: 1727px) {
+    .asideBlock li {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1560px) {
+    .title {
+        display: none;
+    }
+
+    .asideBlock {
+        width: 15%;
+    }
+
+    .icon {
+        margin: 0 auto;
+        font-size: 50px;
+    }
+
+    .AsideA {
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+    .asideBlock li {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 800px) {
+    aside {
+        display: none;
+    }
+}

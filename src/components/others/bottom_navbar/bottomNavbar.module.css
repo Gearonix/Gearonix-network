@@ -1,0 +1,50 @@
+@import '../../../source/fonts/font.css';
+
+.main{
+    background: #4B4B4B;
+    height: 58px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+    z-index: 40;
+}
+.home:before{
+    color: white;
+    content: "\e902";
+}
+.friends:before{
+    color: white;
+    content: "\e9da";
+}
+.users:before{
+    color: white;
+    content: "\e903";
+}
+.messages:before{
+    color: white;
+    content: "\e904";
+}
+.news:before{
+    color: white;
+    content: "\e91a";
+}
+.settings:before{
+    color: white;
+    content: "\e994";
+}
+.navbarBlock ul li{
+    font-family: 'icomoon' !important;
+    font-size: 38px;
+}
+.navbarBlock ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 518px) {
+    .main{
+        display: block;
+    }
+}

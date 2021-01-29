@@ -1,0 +1,46 @@
+.main{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background:rgba(222, 241, 247, 1);
+    border-radius: 10px;
+}
+.main::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.main { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.main { overflow: -moz-scrollbars-none; }
+.nousers{
+    font-size: 70px;
+    color: #484848;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.showmore{
+    background: rgba(48, 227, 221,1);
+    width: 300px;
+    height: 48px;
+    border-radius: 20px;
+    font-size: 23px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+.title{
+    text-align: center;
+    color: rgba(72, 72, 72, 1);
+    font-size: 60px;
+    margin: 0 auto;
+    margin-top: 66px;
+    margin-bottom: 45px;
+
+}

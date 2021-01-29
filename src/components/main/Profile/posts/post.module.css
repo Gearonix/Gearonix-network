@@ -1,0 +1,81 @@
+/*rgba(180, 180, 180, 1)*/
+.main {
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.textarea {
+    width: 80%;
+    height: 240px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background: rgba(180, 180, 180, 1);
+    font-size: 20px;
+    resize: none;
+    display: block;
+    outline: none;
+    border: none;
+}
+
+.textarea::placeholder {
+    color: rgba(104, 104, 104, 1);
+    padding-left: 4px;
+    padding-top: 4px;
+}
+
+.input {
+    background: rgba(206, 145, 111, 1);
+    border: none;
+    color: white;
+    font-weight: normal;
+    font-size: 26px;
+    border-radius: 15px;
+    width: 17%;
+    height: 58px;
+    margin-top: 35px;
+    float: right;
+    outline: none;
+    margin-right: 20px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.input:hover {
+    background: rgba(194, 114, 68, 1);
+}
+
+.form {
+    position: relative;
+    height: 400px;
+}
+
+.newPostBlock {
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.postCount {
+    font-size: 30px;
+    margin-left: 10%;
+    display: inline-block;
+    margin-top: 50px;
+    color: rgba(96, 79, 71, 1);
+}
+
+@media (max-width: 887px) {
+    .input {
+        width: 27%;
+    }
+}
+
+@media (max-width: 768px) {
+    .textarea {
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    .input {
+        display: none;
+    }
+}

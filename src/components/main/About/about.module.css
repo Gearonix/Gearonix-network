@@ -1,0 +1,82 @@
+/*span{*/
+/*	font-size: 70px;*/
+/*}*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.title{
+    text-align: center;
+    color: rgba(72, 72, 72, 1);
+    font-size: 65px;
+    margin: 0 auto;
+    margin-top: 66px;
+    margin-bottom: 202px;
+}
+.main{
+    background: #FFDBD9;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+.about{
+    font-size: 35px;
+    color: #565656;
+    margin: 0 auto;
+    width: 72%;
+}
+.goodluck{
+    font-family: 'Pacifico', cursive;
+    font-size: 90px;
+    margin: 0 auto;
+    width: 425px;
+    margin-top: 112px;
+}
+.image{
+    background: url("../../../source/img/svg/goodluckeeeeeeeeeeeeeeeeeeeee.svg") no-repeat;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 112px;
+    margin-bottom: 112px;
+    animation-name: image;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes image {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 471px) {
+    .title{
+        margin-bottom: 100px;
+    }
+    .about{
+        font-size: 25px;
+        text-align: center;
+    }
+    .goodluck{
+        font-size: 70px;
+        width: 90%;
+        white-space: nowrap;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .image{
+        width: 250px;
+        height: 250px;
+        background-size: 80%;
+        background-position: center;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 370px) {
+    .goodluck{
+        font-size: 50px;
+    }
+
+}
+
+

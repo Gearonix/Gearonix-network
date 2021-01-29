@@ -1,0 +1,172 @@
+@import './../../../source/fonts/font.css';
+
+.main{
+	width: 100%;
+	height: 100%;
+	/*font-size: 50px;*/
+	background: rgba(255, 241, 249, 1);
+	border-radius: 10px;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+	/*overflow: auto;*/
+}
+.span{
+	font-size: 25px;
+}
+.newUserBlock{
+	height: 1000px;
+}
+.title{
+	text-align: center;
+	color: rgba(72, 72, 72, 1);
+	font-size: 65px;
+	margin: 0 auto;
+	margin-top: 66px;
+	margin-bottom: 45px;
+}
+.main::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.main { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.main { overflow: -moz-scrollbars-none; }
+.preloader{
+	background: url('./../../../source/img/prel.png');
+	background-position: 50%;
+	background-size: 107%;
+	width: 100px;
+	height: 100px;
+	animation-name: preloader;
+	animation-duration: 1.2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	position: absolute;
+	left: 45%;
+	top: 250px;
+	transform: translate(-50%,0);
+	z-index: 1;
+}
+.hidden{
+	display: none;
+}
+@keyframes preloader{
+	0%{
+		transform: rotate(0deg)
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.showmore{
+	background: rgba(95, 215, 75, 1);
+	width: 230px;
+	height: 48px;
+	border-radius: 20px;
+	font-size: 23px;
+	border: none;
+	outline: none;
+	font-weight: 700;
+	display: inline-block;
+	margin-left: 50%;
+	transform: translate(-50%,0);
+	cursor: pointer;
+	margin-bottom: 100px;
+}
+.selected{
+	color: red;
+}
+.navbar_wrapper{
+	width: 240px;
+	height: 42px;
+	background: #A9A9A9;
+	border-radius: 10px;
+	border: 1px solid rgb(112, 112, 112);
+	position: relative;
+	/*left: 5px;*/
+	margin-bottom: 79px;
+	margin-left: 1.5%;
+	display: flex;
+	justify-content: center;
+}
+.nav_item,.selected,.arrow{
+	font-size: 23px;
+	color: rgb(235, 235, 235);
+	margin-left: 5px;
+	cursor: pointer;
+}
+.selected{
+	font-weight: 700;
+}
+.flexNav{
+	display: flex;
+}
+.right,.left{
+	position: absolute;
+}
+.right{
+
+	right: 0;
+}
+.left{
+	left: 0;
+}
+.profile{
+	position : relative;
+}
+.searchInputBlock{
+	width: 323px;
+	height: 47px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+	background: #A9A9A9;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+}
+.searchInput::placeholder{
+	color: rgba(234, 234, 234, 1);
+	font-size: 20px;
+	padding-left: 25%;
+}
+.searchInput{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: rgba(228, 228, 228, 1);
+	font-size: 20px;
+	width: 80%;
+}
+.searchIcon:before{
+	font-family: 'icomoon' !important;
+	content: "\e901";
+	color: rgba(234, 234, 234, 1);
+	font-size: 25px;
+}
+.searchIcon{
+	border: none;
+	background: none;
+	outline: none;
+	margin-left: 6%;
+	cursor: pointer;
+}
+.cancel:before{
+	font-family: 'icomoon' !important;
+	content: "\e900";
+	color: rgba(201, 8, 8, 1);
+	font-size: 32px;
+}
+.cancel{
+	border: none;
+	background: none;
+	outline: none;
+	cursor: pointer;
+	padding: 0;
+	/*margin-left: 14px;*/
+}
+
+@media (max-width: 458px) {
+	.searchInputBlock{
+		width: 300px;
+	}
+}

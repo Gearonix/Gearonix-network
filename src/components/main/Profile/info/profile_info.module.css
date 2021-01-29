@@ -1,0 +1,272 @@
+.main {
+    background: white;
+    height: 636px;
+    width: 100%;
+    margin-top: 153px;
+
+}
+
+.mainBlock {
+    display: flex;
+}
+
+.nameAndDescBlock {
+    width: 50%;
+    height: 100%;
+    margin-left: 11%;
+}
+
+.addImageHidden {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    position: absolute;
+    margin-top: 4px;
+}
+
+.save, .cancel {
+    width: 41%;
+    height: 100%;
+    border-radius: 18px;
+    font-size: 34px;
+    color: #9E9E9E;
+    border: none;
+    outline: none;
+    transition-property: background-color, color;
+    transition-duration: 0.6s;
+}
+
+.save:hover, .cancel:hover {
+    color: white;
+}
+
+.save {
+    background: #CDFFE1;
+}
+
+.save:hover {
+    background: rgba(92, 241, 152, 1);
+}
+
+.cancel {
+    background: #FFC7C7;
+    margin-left: 11%;
+}
+
+.cancel:hover {
+    background: rgba(249, 156, 156, 1);
+}
+
+.saveOrCancelBlock {
+    width: 703px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 157px;
+}
+
+.addImageTitle {
+    font-weight: normal;
+    font-size: 26px;
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+}
+
+.addImageButton {
+    color: #747474;
+    border-radius: 15px;
+    background: #DBDBDB;
+    overflow: hidden;
+    position: relative;
+    height: 43px;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 143px;
+    transition-property: background-color, color;
+    transition-duration: 0.6s;
+}
+
+.addImageButton:hover {
+    background: rgba(174, 174, 174, 1);
+    color: white;
+}
+
+.userImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.imageBlock {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h2Name {
+    font-size: 45px;
+    color: #4B4B4B;
+    font-weight: normal;
+    margin-bottom: 56px;
+}
+
+.fullName {
+    border: none;
+    width: 100%;
+    height: 66px;
+    border-bottom: 8px solid #C7C7C7;
+    outline: none;
+    font-size: 30px;
+    color: #C7C7C7;
+}
+
+.fullName::placeholder {
+    font-size: 30px;
+    color: #C7C7C7;
+}
+
+.deskArea {
+    resize: none;
+    height: 70px;
+}
+
+.deskArea::-webkit-scrollbar {
+    width: 0;
+}
+
+/* ie 10+ */
+.deskArea {
+    -ms-overflow-style: none;
+}
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.deskArea {
+    overflow: -moz-scrollbars-none;
+}
+
+.contacts {
+    color: black;
+    font-size: 35px;
+}
+
+.error {
+    color: red;
+    font-size: 20px;
+}
+
+.edit, .animateMain {
+    width: 79%;
+    height: 750px;
+    border-radius: 20px;
+    background: white;
+    animation-name: open;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 3;
+    top: 200px;
+    left: 0;
+    right: 0;
+}
+
+.animateMain {
+    animation-name: close;
+    animation-duration: 1.4s;
+}
+
+@keyframes open {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(0.7);
+    }
+}
+
+@keyframes close {
+    0% {
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+.title {
+    color: #4F4F4F;
+    font-size: 60px;
+    text-align: center;
+    font-weight: normal;
+}
+
+@media (max-width: 1090px) {
+    .saveOrCancelBlock {
+        width: 90%;
+    }
+
+    .edit {
+        width: 100%;
+    }
+}
+
+@media (max-width: 552px) {
+    .userImage {
+        width: 150px;
+        height: 150px;
+    }
+
+    .addImageButton {
+    }
+}
+
+@media (max-width: 520px) {
+    .edit, .animateMain {
+        width: 100%;
+        top: 80px;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .imageBlock {
+        display: none;
+    }
+
+    .nameAndDescBlock {
+        width: 95%;
+        margin-left: 15px;
+    }
+
+    .h2Name {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .saveOrCancelBlock {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 378px) {
+    .edit, .animateMain {
+        width: 372px;
+        top: 80px;
+    }
+}
+
+@media (max-width: 334px) {
+    .edit, .animateMain {
+        width: 322px;
+        top: 80px;
+    }
+
+    .save, .cancel {
+        font-size: 30px;
+    }
+}

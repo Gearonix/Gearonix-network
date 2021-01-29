@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('../../../source/fonts/font.css');
+
+.backBlack {
+    background: url('./../../../source/img/svg/mount.png') no-repeat;
+    height: 553px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: relative;
+
+}
+
+.mainBlock {
+    background: rgba(218, 218, 218, 1);
+    width: 100%;
+    height: 70%;
+
+    box-sizing: border-box;
+}
+
+.kotek, .userAvatar {
+    background-size: 100%;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 25px;
+    height: 150px;
+    width: 150px;
+}
+
+.kotek img, .userAvatar img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 100%;
+}
+
+.userName {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 57px;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 70%;
+}
+
+.changeStatusBlock {
+    background: rgba(164, 164, 164, 1);
+    width: 80%;
+    height: 58px;
+}
+
+.changeProfileContainer {
+    display: flex;
+    cursor: pointer;
+
+    margin: 0 auto;
+    width: 47%;
+}
+
+.polygon1 {
+    width: 0;
+    height: 0;
+    border: 29px solid transparent;
+    border-top: 29px solid rgba(164, 164, 164, 1);
+    border-right: 29px solid rgba(164, 164, 164, 1);
+}
+
+.polygon2 {
+    width: 0;
+    height: 0;
+    border: 29px solid transparent;
+    border-top: 29px solid rgba(164, 164, 164, 1);
+    border-left: 29px solid rgba(164, 164, 164, 1);
+}
+
+.userAvatar {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.profile {
+    /*background: white;*/
+    /*display: flex;*/
+    box-sizing: border-box;
+    /*background:  url('./../../../source/img/mount.jpg')*/
+}
+
+.mainBlockOther {
+    /*margin-left: 50px;*/
+    color: rgb(84, 92, 86);
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.changeProfileTitle {
+    font-size: 34px;
+    color: rgba(237, 237, 237, 1);
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.changeProfileTitle:hover {
+    color: rgba(209, 209, 209, 1);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.mainBlockOther ul li + li {
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.name {
+    font-size: 55px;
+    font-weight: bold;
+    color: black;
+}
+
+.description, .lookforjob, .contacts {
+    font-size: 30px;
+    color: rgba(89, 89, 89, 1);
+}
+
+.description {
+    font-size: 36px;
+    box-sizing: content-box;
+    white-space: normal;
+    display: inline;
+    font-weight: bold;
+}
+
+.case {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    margin-right: 31px;
+}
+
+.case:before {
+    font-size: 30px;
+    color: black;
+    font-family: 'icomoon' !important;
+    content: "\e9ae";
+}
+
+.description_wrapper {
+    width: 67%;
+    /*border: 2px solid red;*/
+    margin: 0 auto;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.contactsBlock {
+    margin: 0 auto;
+    width: 900px;
+    margin-top: 50px;
+}
+
+.contactsBlock li {
+    font-size: 34px;
+    color: rgba(64, 64, 64, 1);
+}
+
+.ahref {
+    font-size: 20px;
+    color: rgba(98, 86, 144, 1);
+}
+
+.ahref:hover {
+    color: rgba(151, 140, 193, 1);
+}
+
+.change_desk {
+    font-size: 25px;
+}
+
+.test {
+    position: relative;
+    z-index: 1;
+}
+
+.preloader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+@media (max-width: 1135px) {
+    .case {
+        display: none;
+    }
+
+    .description_wrapper {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .backBlack {
+        height: 350px;
+    }
+
+    .userAvatar {
+        width: 170px;
+        height: 170px;
+        top: 35%;
+    }
+
+    .userName {
+        top: 60%;
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 909px) {
+    .changeProfileTitle {
+        font-size: 30px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 766px) {
+    .changeProfileContainer {
+        width: 65%;
+    }
+}
+
+@media (max-width: 626px) {
+    .changeProfileContainer {
+        width: 75%;
+    }
+
+    .changeProfileTitle {
+        white-space: normal;
+    }
+}
+
+@media (max-width: 490px) {
+    .changeProfileContainer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 406px) {
+    .changeProfileTitle {
+        font-size: 26px;
+    }
+
+    .changeStatusBlock {
+        height: 38px;
+    }
+
+    .polygon1, .polygon2 {
+        border-width: 19px;
+    }
+}
+
+@media (max-width: 406px) {
+    .userAvatar {
+        width: 150px;
+        height: 150px;
+    }
+}

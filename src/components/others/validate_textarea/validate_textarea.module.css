@@ -1,0 +1,30 @@
+.error textarea:not(.disable) ,.error input{
+	border: 1px solid red;
+}
+.span{
+	color: red;
+	display: block;
+	font-size: 18px;
+}
+
+.error input{
+	border: 2px solid red;
+}
+.hidden{
+	display: none;
+}
+.post-area-span{
+
+}
+.postSpan{
+	position: absolute;
+	margin-left: 10%;
+	color: rgb(79, 84, 80);
+	font-size: 22px;
+}
+.postTextArea{
+	border: none;
+}
+.searchMain{
+	width: 70%;
+}

@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('../../source/fonts/font.css');
+
+header{
+  background: rgba(58, 60, 63, 1);
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+/*.login{*/
+/*	display: flex;*/
+/*	align-items: center;*/
+/*	position: absolute;*/
+/*	right: 15%;*/
+/*}*/
+/*.login span{*/
+/*	color: rgba(39, 39, 39, 1);*/
+/*	font-size: 30px;*/
+/*}*/
+/*.login img{*/
+/*	width: 90px;*/
+/*	height: 90px;*/
+/*	border-radius: 0;*/
+/*}*/
+.hidden{
+	display: none;
+}
+/*.logout{
+	font-size: 25px;
+	color: red;
+}*/
+.darkBlue{
+	background: #00203FFF;
+}
+.justGreen{
+	background : #2C5F2D;
+}
+.lightBlue{
+	background : #0063B2FF;
+}
+.lightYellow{
+	background  : #A07855FF;
+}
+.white{
+	background : #FFFFFFFF;
+}
+.logout{
+	width: 3%;
+	height: 40px;
+	margin-bottom: 10px;
+}
+.logout:before{
+	font-family: 'icomoon' !important;
+	content: "\ea13";
+	color: rgba(217, 217, 217, 1);
+	font-size: 40px;
+	transition-property: color;
+	transition-duration: 0.3s;
+	padding-left: 25%;
+	text-align: center;
+}
+.logoutTitle{
+	color : rgba(217, 217, 217, 1);
+	font-size: 18px;
+	font-weight: normal;
+	font-family: 'Poppins', sans-serif;
+}
+.logoutBlock{
+	margin-left: 5%;
+	text-align: center;
+	cursor : pointer;
+	/*border: 2px solid red;*/
+}
+.logo{
+	/*background : url('../../source/img/svg/logo.svg') no-repeat;*/
+	/*background-size:70%;*/
+	width: 7%;
+	/*border: 2px solid red;*/
+	height: 80%;
+	margin-left: 8%;
+}
+.logo img{
+	width: 100%;
+	height: 100%;
+}
+.home:before{
+	content: "\e902";
+}
+.friends:before{
+	content: "\e9da";
+}
+.users:before{
+	content: "\e903";
+}
+.messages:before{
+	content: "\e904";
+}
+.news:before{
+	content: "\e91a";
+}
+.settings:before{
+	content: "\e994";
+ }
+.navbar{
+	/*border: 2px solid red;*/
+	width: 22%;
+	height: 56px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+.navbar ul li div{
+	width: 17%;
+	height: 50px;
+	cursor : pointer;
+	font-family: 'icomoon' !important;
+	content: "\e902";
+	color: white;
+	font-size: 50px;
+	transition-property: color;
+	transition-duration: 0.4s;
+}
+.navbar ul li div:hover{
+	color : rgba(199, 199, 199, 1)
+}
+
+.navbar ul{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.login{
+	width: 130px;
+	height: 36px;
+	border-radius: 20px;
+	background: #2F2F2F;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: 18%;
+	top: 50%;
+	transform: translate(0,-50%);
+	transition-property: background-color;
+	transition-duration: 0.3s;
+}
+
+.loginBlock{
+	width: 11%;
+	height: 55%;
+	/*border: 2px solid red;*/
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: 20%;
+}
+.login:hover{
+	background: rgba(33, 33, 33, 1);
+}
+.reallyHidden{
+	visibility: hidden;
+}
+.loginTitle{
+	color: #FFF9C3;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	margin: 0 auto;
+}
+
+.userName{
+	font-size: 20px;
+	color: rgba(255, 255, 255, 1);
+	font-family: 'Poppins', sans-serif;
+	font-weight: normal;
+}
+.userImage{
+	width: 80px;
+	margin-left: 14%;
+	height: 100%;
+	display: inline-block;
+	background-size: 80%;
+	border-radius: 100%;
+}
+@media (max-width: 1512px){
+	.navbar ul li div{
+		width: 40px;
+		height: 40px;
+		font-size: 40px;
+	}
+}
+@media (max-width: 1426px){
+
+}
+@media (max-width: 1200px){
+	.navbar{
+		width: 30%;
+	}
+}
+@media (max-width: 944px) {
+	.navbar{
+		width: 40%;
+	}
+	.loginBlock{
+		right: 10%;
+	}
+	.userImage{
+		height: 70px;
+		width: 70px;
+	}
+	.logo{
+		width: 9%;
+		margin-left: 5%;
+		display: none;
+	}
+	.login{
+		right: 9%;
+	}
+}
+@media (max-width: 871px) {
+	.userName{
+		display: none;
+	}
+	.logoutTitle{
+		display: none;
+	}
+}
+@media (max-width: 696px) {
+	.navbar{
+		width: 50%;
+	}
+	.logo{
+		display: none;
+	}
+	.login{
+		right: 20px;
+	}
+	.navbar ul li div{
+		width: 35px;
+		height: 35px;
+		font-size: 35px;
+	}
+}
+@media (max-width: 591px) {
+	.login{
+		right: 0;
+	}
+}
+@media (max-width: 520px) {
+	.navbar{
+		display: none;
+	}
+	header{
+		height: 75px;
+	}
+	.userImage{
+		width: 60px;
+		height: 60px;
+	}
+	.login{
+		right: 40px;
+	}
+}
+
+@media (max-width: 364px){
+	.loginBlock{
+		right: 20%;
+	}
+}

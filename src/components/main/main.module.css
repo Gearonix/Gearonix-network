@@ -1,0 +1,29 @@
+.main{
+  width: 70%;
+  MARGIN-TOP: 100px;
+  min-height: 500px;
+  position: relative;
+  /*background: url(./../../source/img/mount_test.png);*/
+  /*background-position: 60% 150%;*/
+  background-size: 100%;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  /*border-right: 4px solid rgb(175, 180, 189);*/
+}
+
+.light{
+backgorund: white;
+}
+.dark{
+background : rgb(53, 53, 54);
+}
+@media (max-width: 1727px) {
+  .main{
+    width: 90%  ;
+  }
+}
+@media (max-width: 800px){
+  .main{
+    width: 100%;
+  }
+}

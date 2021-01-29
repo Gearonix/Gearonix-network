@@ -1,0 +1,73 @@
+@import '../../../source/fonts/font.css';
+.main,.animate{
+    width: 59%;
+    height: 952px;
+    background : white;
+    border: 5px solid #707070;
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%,-50%);
+    animation-name : open;
+    animation-duration: 0.4s;
+}
+.title{
+    color: #515151;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 40px;
+}
+.image{
+    background: url("../../../source/img/svg/sad.svg") no-repeat;
+    background-size: 95%;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 58px;
+}
+.message{
+    color: #727272;
+    font-size: 40px;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.cross:before{
+    font-family: 'icomoon' !important;
+    content: "\e900";
+    font-size: 55px;
+}
+.cross{
+    color: #3C3C3C;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.animate{
+    animation-name: close;
+    animation-duration: 0.4s;
+}
+
+@keyframes close {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes open {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media (max-width: 700px){
+    .main{
+        width: 90%;
+    }
+}

@@ -1,0 +1,68 @@
+.preloader{
+	background: url('./../../source/img/svg/imgonline-com-ua-Transparent-backgr-ir8vRkasHtXIJOF.png');
+	background-position: 50%;
+	background-size: 307%;
+	width: 100px;
+	height: 100px;
+	animation-name: preloader;
+	animation-duration: 1.2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 50;
+}
+@keyframes preloader{
+	0%{
+		transform: rotate(0deg)
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.main{
+	/*background: white;*/
+	border: 1px solid transparent;
+	box-sizing: border-box;
+	height: 1100px;
+}
+.title{
+	margin-top: 149px;
+	font-size: 70px;
+	color: #616161;
+	text-align: center;
+}
+.image{
+	background: url("../../source/img/svg/wifi.svg") no-repeat;
+	background-size: 100%;
+	width: 28%;
+	height: 402px;
+	margin: 0 auto;
+	margin-top: 70px;
+	animation-name: size,rotate;
+	animation-iteration-count: infinite,infinite;
+	animation-duration: 6s,12s;
+}
+@media (max-width: 800px) {
+	.preloader{
+		left: 40%;
+	}
+}
+@media (max-width: 646px) {
+	.title{
+		font-size: 30px;
+		margin-top: 80px;
+	}
+}
+@media (max-width: 392px) {
+	.title{
+		font-size: 25px;
+		margin-top: 60px;
+	}
+	.preloader{
+		width: 70px;
+		height: 70px;
+	}
+}
